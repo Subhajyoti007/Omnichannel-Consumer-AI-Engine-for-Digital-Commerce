@@ -1,4 +1,4 @@
-# 🚀 Omnichannel Consumer AI Engine for Digital Commerce
+#  Omnichannel Consumer AI Engine for Digital Commerce
 
 Welcome to the **Omnichannel Consumer AI Engine**, a state-of-the-art intelligent digital commerce platform designed to revolutionize customer experiences using AI-driven Digital Twins, real-time analytics, and seamless AI agent routing.
 
@@ -6,7 +6,7 @@ This project is built using a decoupled architecture, separating a highly intera
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 The system is split into two primary components: the **Frontend** (Vite + React) and the **Backend** (FastAPI + LangGraph).
 
@@ -37,19 +37,19 @@ graph TD
     API --> TTS
 ```
 
-### 🔄 Request Flow (Sequence Architecture)
+###  Request Flow (Sequence Architecture)
 
 Here is exactly how a request travels through the system from the moment a user speaks to the moment the UI responds:
 
 ```mermaid
 sequenceDiagram
     autonumber
-    actor User as 👤 User
-    participant Frontend as 🎨 React Frontend
-    participant FastAPI as ⚡ FastAPI Backend
-    participant Graph as 🧠 LangGraph Router
-    participant LLM as 🤖 OpenAI GPT-4o-mini
-    participant DB as 💾 SQLite DB
+    actor User as  User
+    participant Frontend as  React Frontend
+    participant FastAPI as  FastAPI Backend
+    participant Graph as  LangGraph Router
+    participant LLM as  OpenAI GPT-4o-mini
+    participant DB as  SQLite DB
 
     User->>Frontend: Speaks into Microphone
     Frontend->>Frontend: Web Speech API transcribes Voice to Text
@@ -68,14 +68,14 @@ sequenceDiagram
     Frontend-->>User: Speaks answer out loud + Displays UI
 ```
 
-### 1. 🎨 The Frontend (`/fontend`)
+### 1.  The Frontend (`/fontend`)
 Built with **Vite, React, and TailwindCSS**.
 * **TeleAgent AI**: A persistent AI chat drawer accessible from anywhere in the app. Supports Voice Input and Text-to-Speech (TTS) output.
 * **Customer Digital Twin**: Dynamically simulated user profiles (using randomuser.me) that hold browsing history, carts, loyalty points, and purchase intent.
 * **Admin Dashboard**: Real-time analytics displaying user engagement, agent responses, and revenue metrics.
 * **Deployment**: Configured for instant serverless deployment on **Vercel**.
 
-### 2. 🧠 The Backend (`/backend_python`)
+### 2.  The Backend (`/backend_python`)
 Built with **FastAPI, LangGraph, and Langchain**.
 * **Multi-Agent Routing**: Uses `LangGraph` to route user intents intelligently to specific sub-agents (e.g., BillingAgent, SupportAgent, ProductAgent).
 * **AI Streaming Protocol**: Streams AI responses word-by-word back to the frontend for a fast, responsive chat experience.
@@ -84,7 +84,7 @@ Built with **FastAPI, LangGraph, and Langchain**.
 
 ---
 
-## 🚀 Getting Started Locally
+##  Getting Started Locally
 
 ### Prerequisites
 * **Node.js** (v18+)
